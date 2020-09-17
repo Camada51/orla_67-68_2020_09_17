@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Orla del 67-68, Colegio de la Inmaculada de Alicante</title>
+    <link rel="icon" href="icon/67-68.ico" type="image/x-icon" />
+    <script src="js/Orla68_R.js"></script>
+    <script src="js/creditosTexto.js"></script>
+    <script src="eventos/js/eventosString.js"></script>
+
+    <link href="css/Orla68.css" rel="stylesheet" />
+
+</head>
+
+<body onload="ini();">
+    <div id="lasOrlas">
+        <div id="orla" class="Orla">
+            <div id="orlaImagen" class="orlaImagen">
+                <div id="titulo">
+                    <span id="textoTitulo">
+                        17 de febrero 2018<br />
+                        50 años después...
+                    </span>
+                    <div id="creditos">
+                    </div>
+                </div>
+                <div id="botonMostrarCarrusel" title="Click para ver carrusel de fotos" class="botonMostrarCarrusel "
+                    onmouseover="mostrarMenuEvt(this);" onmouseout="mostrarMenuEvt(this);">Seleccione el día, para ver
+                    sus
+                    fotos:</div>
+                <div id="botonMostrarXOrla" title="Click para mostar los demás" onclick="mostrarXOrla();">Mostrar el
+                    resto
+                </div>
+            </div>
+
+            <div id="orlaFotos" class="fotos">
+                <div id="001" class="marcoA"></div>
+                <div id="002" class="marcoA"></div>
+                <div id="003" class="marcoA"></div>
+                <div id="004" class="marcoA"></div>
+                <div id="005" class="marcoA"></div>
+                <div id="006" class="marcoA"></div>
+                <div id="007" class="marcoA"></div>
+
+                <div id="Al01 " class="marcoA" style="background-image: url('img68/imagen-01.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-01.jpg">
+
+                    </div>
+                </div>
+                <div id="Al02 " class="marcoA" style="background-image: url('img68/imagen-02.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-02.jpg">
+                        <img class="fotoO" src="img18/G_0_2_R_Alenda.jpg">
+                    </div>
+                </div>
+                <div id="Al03 " class="marcoA" style="background-image: url('img68/imagen-03.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-03.jpg">
+
+                    </div>
+                </div>
+                <div id="Al04 " class="marcoA" style="background-image: url('img68/imagen-04.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-04.jpg">
+                        <img class="fotoO" src="img18/G_1_2_E_Albarracin.jpg">
+                    </div>
+                </div>
+                <div id="Al05 " class="marcoA" style="background-image: url('img68/imagen-05.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-05.jpg">
+                        <img class="fotoO" src="img18/G_1_3_JL_Alonso.jpg">
+                    </div>
+                </div>
+                <div id="Al06 " class="marcoA" style="background-image: url('img68/imagen-06.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-06.jpg">
+                        <img class="fotoO" src="img18/G_1_4_J_Alos.jpg">
+                    </div>
+                </div>
+                <div id="Al07 " class="marcoA" style="background-image: url('img68/imagen-07.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-07.jpg">
+                        <img class="fotoO" src="img18/G_1_5_JM_Berbegall.jpg">
+                    </div>
+                </div>
+                <div id="Al08 " class="marcoA" style="background-image: url('img68/imagen-08.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-08.jpg">
+                        <img class="fotoO" src="img18/G_1_6_V_Blanco.jpg">
+                    </div>
+                </div>
+                <div id="Al09 " class="marcoA" style="background-image: url('img68/imagen-09.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-09.jpg">
+                        <img class="fotoO" src="img18/G_1_7_J_Boronat.jpg">
+                    </div>
+                </div>
+                <div id="Al10 " class="marcoA" style="background-image: url('img68/imagen-10.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-10.jpg">
+                        <img class="fotoO" src="img18/G_1_8_V_Bertomeu.jpg">
+                    </div>
+                </div>
+                <div id="Al11 " class="marcoA" style="background-image: url('img68/imagen-11.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-11.jpg">
+                        <img class="fotoO" src="img18/G_1_9_JA_Carreno.jpg">
+                    </div>
+                </div>
+                <div id="Al12 " class="marcoA" style="background-image: url('img68/imagen-12.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-12.jpg">
+
+                    </div>
+                </div>
+                <div id="Al13 " class="marcoA" style="background-image: url('img68/imagen-13.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-13.jpg">
+
+                    </div>
+                </div>
+                <div id="Al14 " class="marcoA" style="background-image: url('img68/imagen-14.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-14.jpg">
+                        <img class="fotoO" src="img18/G_2_3_L_Faus.jpg">
+                    </div>
+                </div>
+                <div id="Al15 " class="marcoA" style="background-image: url('img68/imagen-15.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-15.jpg">
+                        <img class="fotoO" src="img18/G_2_4_JM_Feliu.jpg">
+                    </div>
+                </div>
+                <div id="Al16 " class="marcoA" style="background-image: url('img68/imagen-16.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-16.jpg">
+                        <img class="fotoO" src="img18/G_2_5_E_Ferreiros.jpg">
+                    </div>
+                </div>
+                <div id="Al17 " class="marcoA" style="background-image: url('img68/imagen-17.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-17.jpg">
+
+                    </div>
+                </div>
+                <div id="Al18 " class="marcoA" style="background-image: url('img68/imagen-18.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-18.jpg">
+                        <img class="fotoO" src="img18/G_2_7_LF_Garrigos.jpg">
+                    </div>
+                </div>
+                <div id="Al19 " class="marcoA" style="background-image: url('img68/imagen-19.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-19.jpg">
+                        <img class="fotoO" src="img18/G_2_8_F_Gimenez.jpg">
+                    </div>
+                </div>
+                <div id="Al20 " class="marcoA" style="background-image: url('img68/imagen-20.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-20.jpg">
+
+                    </div>
+                </div>
+                <div id="Al21 " class="marcoA" style="background-image: url('img68/imagen-21.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-21.jpg">
+
+                    </div>
+                </div>
+                <div id="Al22 " class="marcoA" style="background-image: url('img68/imagen-22.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-22.jpg">
+
+                    </div>
+                </div>
+                <div id="Al23 " class="marcoA" style="background-image: url('img68/imagen-23.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-23.jpg">
+
+                    </div>
+                </div>
+                <div id="Al24 " class="marcoA" style="background-image: url('img68/imagen-24.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-24.jpg">
+                        <img class="fotoO" src="img18/G_3_4_J_Giner.jpg">
+                    </div>
+                </div>
+                <div id="Al25 " class="marcoA" style="background-image: url('img68/imagen-25.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-25.jpg">
+                        <img class="fotoO" src="img18/G_3_5_JA_Gisbet.jpg">
+                    </div>
+                </div>
+                <div id="Al26 " class="marcoA" style="background-image: url('img68/imagen-26.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-26.jpg">
+
+                    </div>
+                </div>
+                <div id="Al27 " class="marcoA" style="background-image: url('img68/imagen-27.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-27.jpg">
+
+                    </div>
+                </div>
+                <div id="Al28 " class="marcoA" style="background-image: url('img68/imagen-28.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-28.jpg">
+
+                    </div>
+                </div>
+                <div id="Al29 " class="marcoA" style="background-image: url('img68/imagen-29.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-29.jpg">
+
+                    </div>
+                </div>
+                <div id="Al30 " class="marcoA" style="background-image: url('img68/imagen-30.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-30.jpg">
+                        <img class="fotoO" src="img18/G_4_1_C_Hornillos.jpg">
+                    </div>
+                </div>
+                <div id="Al31 " class="marcoA" style="background-image: url('img68/imagen-31.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-31.jpg">
+
+                    </div>
+                </div>
+                <div id="Al32 " class="marcoA" style="background-image: url('img68/imagen-32.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-32.jpg">
+
+                    </div>
+                </div>
+                <div id="Al33 " class="marcoA" style="background-image: url('img68/imagen-33.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-33.jpg">
+                        <img class="fotoO" src="img18/G_4_4_R_LadronGuevara.jpg">
+                    </div>
+                </div>
+                <div id="Al34 " class="marcoA" style="background-image: url('img68/imagen-34.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-34.jpg">
+
+                    </div>
+                </div>
+                <div id="Al35 " class="marcoA" style="background-image: url('img68/imagen-35.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-35.jpg">
+                        <img class="fotoO" src="img18/G_4_6_F_Llorca.jpg">
+                    </div>
+                </div>
+                <div id="Al36 " class="marcoA" style="background-image: url('img68/imagen-36.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-36.jpg">
+
+                    </div>
+                </div>
+                <div id="Al37 " class="marcoA" style="background-image: url('img68/imagen-37.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-37.jpg">
+
+                    </div>
+                </div>
+                <div id="Al38 " class="marcoA" style="background-image: url('img68/imagen-38.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-38.jpg">
+                        <img class="fotoO" src="img18/G_4_9_A_Mora.jpg">
+                    </div>
+                </div>
+                <div id="Al39 " class="marcoA" style="background-image: url('img68/imagen-39.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-39.jpg">
+
+                    </div>
+                </div>
+                <div id="Al40 " class="marcoA" style="background-image: url('img68/imagen-40.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-40.jpg">
+                        <img class="fotoO" src="img18/G_5_2_E_Madaira.jpg">
+                    </div>
+                </div>
+                <div id="Al41 " class="marcoA" style="background-image: url('img68/imagen-41.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-41.jpg">
+                        <img class="fotoO" src="img18/G_5_3_IMadrona.jpg">
+                    </div>
+                </div>
+                <div id="Al42 " class="marcoA" style="background-image: url('img68/imagen-42.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-42.jpg">
+                        <img class="fotoO" src="img18/G_5_4_JMendez.jpg">
+                    </div>
+                </div>
+                <div id="Al43 " class="marcoA" style="background-image: url('img68/imagen-43.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-43.jpg">
+
+                    </div>
+                </div>
+                <div id="Al44 " class="marcoA" style="background-image: url('img68/imagen-44.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-44.jpg">
+
+                    </div>
+                </div>
+                <div id="Al45 " class="marcoA" style="background-image: url('img68/imagen-45.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-45.jpg">
+
+                    </div>
+                </div>
+                <div id="Al46 " class="marcoA" style="background-image: url('img68/imagen-46.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-46.jpg">
+
+                    </div>
+                </div>
+                <div id="Al47 " class="marcoA" style="background-image: url('img68/imagen-47.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-47.jpg">
+
+                    </div>
+                </div>
+                <div id="Al48 " class="marcoA" style="background-image: url('img68/imagen-48.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-48.jpg">
+                        <img class="fotoO" src="img18/G_6_1_JM_Petusa.jpg">
+                    </div>
+                </div>
+                <div id="Al49 " class="marcoA" style="background-image: url('img68/imagen-49.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-49.jpg">
+                        <img class="fotoO" src="img18/G_6_2_R_Peyro.jpg">
+                    </div>
+                </div>
+                <div id="Al50 " class="marcoA" style="background-image: url('img68/imagen-50.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-50.jpg">
+
+                    </div>
+                </div>
+                <div id="Al51 " class="marcoA" style="background-image: url('img68/imagen-51.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-51.jpg">
+
+                    </div>
+                </div>
+                <div id="Al52 " class="marcoA" style="background-image: url('img68/imagen-52.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-52.jpg">
+
+                    </div>
+                </div>
+                <div id="Al53 " class="marcoA" style="background-image: url('img68/imagen-53.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-53.jpg">
+                        <img class="fotoO" src="img18/G_6_6_E_Roldan.jpg">
+                    </div>
+                </div>
+                <div id="Al54 " class="marcoA" style="background-image: url('img68/imagen-54.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-54.jpg">
+                        <img class="fotoO" src="img18/G_6_7_S_Ros.jpg">
+                    </div>
+                </div>
+                <div id="Al55 " class="marcoA" style="background-image: url('img68/imagen-55.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-55.jpg">
+
+                    </div>
+                </div>
+                <div id="Al56 " class="marcoA" style="background-image: url('img68/imagen-56.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-56.jpg">
+                        <img class="fotoO" src="img18/G_6_9_R_Reyes.jpg">
+                    </div>
+                </div>
+                <div id="Al57 " class="marcoA" style="background-image: url('img68/imagen-57.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-57.jpg">
+
+                    </div>
+                </div>
+                <div id="Al58 " class="marcoA" style="background-image: url('img68/imagen-58.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-58.jpg">
+                        <img class="fotoO" src="img18/G_7_2_B_Sanchezs.jpg">
+                    </div>
+                </div>
+                <div id="Al59 " class="marcoA" style="background-image: url('img68/imagen-59.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-59.jpg">
+                        <img class="fotoO" src="img18/G_7_3_JA_Sanchez.jpg">
+                    </div>
+                </div>
+                <div id="Al60 " class="marcoA" style="background-image: url('img68/imagen-60.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-60.jpg">
+
+                    </div>
+                </div>
+                <div id="Al61 " class="marcoA" style="background-image: url('img68/imagen-61.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-61.jpg">
+
+                    </div>
+                </div>
+                <div id="Al62 " class="marcoA" style="background-image: url('img68/imagen-62.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-62.jpg">
+                        <img class="fotoO" src="img18/G_7_6_D_Soler.jpg">
+                    </div>
+                </div>
+                <div id="Al63 " class="marcoA" style="background-image: url('img68/imagen-63.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-63.jpg">
+
+                    </div>
+                </div>
+                <div id="Al64 " class="marcoA" style="background-image: url('img68/imagen-64.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-64.jpg">
+
+                    </div>
+                </div>
+                <div id="Al65 " class="marcoA" style="background-image: url('img68/imagen-65.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-65.jpg">
+
+                    </div>
+                </div>
+                <div id="Al66 " class="marcoA" style="background-image: url('img68/imagen-66.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-66.jpg">
+                        <img class="fotoO" src="img18/G_8_1_R_Sirvent.jpg">
+                    </div>
+                </div>
+                <div id="Al67 " class="marcoA" style="background-image: url('img68/imagen-67.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-67.jpg">
+                        <img class="fotoO" src="img18/G_8_2_L_Torres.jpg">
+                    </div>
+                </div>
+                <div id="Al68 " class="marcoA" style="background-image: url('img68/imagen-68.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-68.jpg">
+                        <img class="fotoO" src="img18/G_8_3_H_Terol.jpg">
+                    </div>
+                </div>
+                <div id="Al69 " class="marcoA" style="background-image: url('img68/imagen-69.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-69.jpg">
+
+                    </div>
+                </div>
+                <div id="Al70 " class="marcoA" style="background-image: url('img68/imagen-70.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-70.jpg">
+                        <img class="fotoO" src="img18/G_8_5_E_Toba.jpg">
+                    </div>
+                </div>
+                <div id="Al71 " class="marcoA" style="background-image: url('img68/imagen-71.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-71.jpg">
+                        <img class="fotoO" src="img18/G_8_6_JM_Villaescusa.jpg">
+                    </div>
+                </div>
+                <div id="Al72 " class="marcoA" style="background-image: url('img68/imagen-72.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-72.jpg">
+
+                    </div>
+                </div>
+                <div id="Al73 " class="marcoA" style="background-image: url('img68/imagen-73.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-73.jpg">
+
+                    </div>
+                </div>
+                <div id="Al74 " class="marcoA" style="background-image: url('img68/imagen-74.jpg ');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);"></div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68/imagen-74.jpg">
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div id="X_Orla">
+
+                <div id="Xl01 " class="marcoA" style="background-image: url('img68_R/P_X_X_V_Anguiz.jpg');">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_V_Anguiz.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_V_Anguiz.jpg">
+                    </div>
+                </div>
+    
+                <div id="Xl01 " class="marcoA"
+                    style="background-image: url('img68_R/P_X_X_JB_Aragones.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_JB_Aragones.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_JB_Aragones.jpg">
+                    </div>
+                </div>
+                <div id="Xl02 " class="marcoA"
+                    style="background-image: url('img68_R/P_X_X_J_Delgado.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_J_Delgado.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_J_Delgado.jpg">
+                    </div>
+                </div>
+                <div id="Xl02 " class="marcoA"
+                    style="background-image: url('img68_R/P_X_X_MP_Ferrando.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_MP_Ferrando.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_MP_Ferrando.jpg">
+                    </div>
+                </div>
+                <div id="Xl03" class="marcoA"
+                    style="background-image: url('img68_R/P_X_X_V_G_Oliver.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_V_G_Oliver.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_V_Garcia_Oliver.jpg">
+                    </div>
+                </div>
+                <div id="Xl04" class="marcoA"
+                    style="background-image: url('img68_R/P_X_X_MA_Guillen.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_MA_Guillen.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_MA_Guillen_Albert.jpg">
+                    </div>
+                </div>
+                <div id="Xl05" class="marcoA"
+                    style="background-image: url('img68_R/P_X_X_A_Guillen.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_A_Guillen.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_A_Guillen_Olcina.jpg">
+                    </div>
+                </div>
+                <div id="Xl06" class="marcoA"
+                    style="background-image: url('img68_R/P_X_X_JA_Maltes.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_JA_Maltes.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_JA_Maltes.jpg">
+                    </div>
+                </div>
+                <div id="Xl07" class="marcoA" style="background-image: url('img68_R/P_X_X_M_Pastor.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_M_Pastor.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_M_Pastor.jpg">
+                    </div>
+                </div>
+                <div id="Xl08" class="marcoA"
+                    style="background-image: url('img68_R/P_X_X_FA_Penalva.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_FA_Penalva.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_F_Penalva.jpg">
+                    </div>
+                </div>
+                <div id="Xl09" class="marcoA" style="background-image: url('img68_R/P_X_X_E_Reolid.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_E_Reolid.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_E_Reolid.jpg">
+                    </div>
+                </div>
+                <div id="Xl10" class="marcoA"
+                    style="background-image: url('img68_R/P_X_X_P_Revenga.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_P_Revenga.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_P_Revenga.jpg">
+                    </div>
+                </div>
+                <div id="Xl11" class="marcoA"
+                    style="background-image: url('img68_R/P_X_X_M_Salinas.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_M_Salinas.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_F_Salinas.jpg">
+                    </div>
+                </div>
+                <div id="Xl12" class="marcoA" style="background-image: url('img68_R/P_X_X_C_Suay.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_X_X_C_Suay.jpg">
+                        <img class="fotoO" src="img18_R/X_X_X_C_Suay.jpg">
+                    </div>
+                </div>
+                <div id="Xl13" class="marcoA" style="background-image: url('img68_R/P_C_Ubeda.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_C_Ubeda.jpg">
+                        <img class="fotoO" src="img18_R/C_Ubeda.jpg">
+                    </div>
+                </div>
+                <div id="Xl14" class="marcoA" style="background-image: url('img68_R/P_J_D_Perez.jpg');position:relative">
+                    <div class="fotoControl" onmouseover="mostrarDosY(this);" onmouseout="ocultarDosY(this);">
+                    </div>
+                    <div class="marcoAH">
+                        <img class="fotoO" src="img68_R/P_J_D_Perez.jpg">
+                        <img class="fotoO" src="img18_R/J_D_Perez_20180921-20.32.33.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="clear: both;width: 1px;height: 1px;;"></div>
+    </div>
+    
+    <div id="carruselExt" >
+        <!-- <div id="miMarco"> -->
+            <iframe id="idIframeCarrusel" name="nombreIframeCarrusel"
+                src=""></iframe>
+
+        <!-- </div> -->
+        <div id="btCerrar" title="Click para cerrar carrusel" onclick="ocultarCarrusel(this);">Cerrar carrusel</div>
+    </div>
+</body>
+
+</html>
