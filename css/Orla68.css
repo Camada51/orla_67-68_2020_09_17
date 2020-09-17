@@ -1,0 +1,282 @@
+﻿:root {
+    --orlaWidth: 780px;
+    --orlaHeight: 595px;
+    --orlaImagenWidth: 278px;
+    --orlaImagenHeight: 595px;
+    --orlaFotosWidth: 470px;
+    --orlaFotosHeight: 595px;
+    --orlaFotoWidth: 47px;
+    --orlaFotoHeight: 61px;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: auto;
+}
+
+body {
+    margin: auto;
+    position: relative;
+    /* width: fit-content; */
+    display: grid;
+    justify-content: center;
+    height: fit-content;
+    background-color: burlywood;
+    overflow: hidden;
+    /*    border: dotted thick;*/
+}
+
+#lasOrlas {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    /*width: fit-content;*/
+    /*order: solid grey 1px;*/
+}
+
+.Orla {
+    /*    float: left;
+    position: relative;
+    border: dotted red thin; */
+    display: grid;
+    grid-template-columns: var(--orlaImagenWidth) auto auto;
+    /* width: var(--orlaWidth); */
+    height: var(--orlaHeight);
+    background-image: url('../img68/1967-1968_Vacia.jpg');
+    background-repeat: no-repeat;
+    background-size: var(--orlaWidth) var(--orlaHeight);
+    background-clip: border-box;
+}
+
+.orlaImagen {
+    position: relative;
+    /*
+    float: left; */
+    width: var(--orlaImagenWidth);
+    height: 100%;
+    /*    height: var(--orlaImagenHeight);*/
+    padding: 0% 0% 0% .2%;
+    /*border: solid green thick;*/
+}
+
+#X_Orla {
+    /* float: left; */
+    display: none;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    align-content: flex-start;
+    position: relative;
+    /* left: -35px; */
+    padding: 10px 0px 0px 0px;
+    /* border: solid green thin; */
+    width: calc(calc(var(--orlaFotoWidth) * 2.2) + 1px);
+}
+
+.fotos {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    justify-content: left;
+    align-content: flex-start;
+    /* float: left; */
+    /*position: relative;*/
+    /*top: 10px;*/
+    /*    height: var(--orlaFotosHeight);*/
+    height: 100%;
+    width: var(--orlaFotosWidth);
+    padding: 10px 0px 0px 4px;
+    visibility: hidden;
+}
+
+.fotoControl {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    z-index: 3;
+}
+
+.marcoA {
+    /*utilizado para cada alumno con fotos antes y ahora*/
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    /* float: left; */
+    width: var(--orlaFotoWidth);
+    height: var(--orlaFotoHeight);
+    background-size: contain;
+    background-image: initial;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 0px;
+    margin: 1.3px 2px 1.3px 2px;
+}
+
+.marcoAH {
+    /*utillizado para preentar las fotos antes y ahora ampliadas*/
+    position: absolute;
+    z-index: 1;
+    display: none;
+    bottom: 0px;
+    right: 0px;
+    /*width: auto;*/
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+    border: 2px solid red;
+    background-color: burlywood;
+    clear: both;
+}
+
+.fotoO {
+    position: relative;
+    /*float: left;*/
+    display: inline-block;
+    height: 100%;
+    z-index: 5;
+    /*display:none;*/
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#creditos {
+    position: absolute;
+    display: block;
+    width: 10%;
+    height: 10%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+    white-space: pre;
+    background-color: rgba(148, 0, 0, .0);
+    color: rgba(255, 255, 255, .0);
+    z-index: 100;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+#creditos:hover, #creditos:active {
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+    bottom: -50%;
+    right: 0;
+    margin: .5em 0 0.5em;
+    background-color: rgba(148, 0, 0, 1);
+    color: white;
+}
+
+#titulo {
+    position: relative;
+    width: 100%;
+    border: 0;
+    margin: 0 0 0 .2em;
+    top: 35%;
+    background-color: rgba(108, 58, 58, 0.80);
+    text-align: center;
+    padding: 0em;
+}
+
+#textoTitulo {
+    font-size: 2em;
+    color: rgb(255, 0, 0);
+    font-weight: 900;
+}
+
+#botonMostrarXOrla:hover {
+    background-color: palevioletred;
+    opacity: .5;
+}
+
+#botonMostrarXOrla {
+    position: absolute;
+    z-index: 200;
+    width: 2em;
+    height: 2em;
+    left: 71%;
+    top: 73%;
+    color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.botonMostrarCarrusel {
+    position: absolute;
+    z-index: 200;
+    left: 70%;
+    top: 5%;
+    color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    overflow: hidden;
+    width: 2em;
+    height: 1em;
+    padding: .3em;
+}
+
+.botonMostrarCarrusel_hover {
+    background-color: palevioletred;
+    opacity: 1;
+    /* border: 6px double blue;*/
+    color: rgba(0, 0, 0, 1);
+    width: 25em;
+    height: auto;
+    overflow: visible;
+}
+
+.botonMostrarCarrusel ul {
+    background-color: antiquewhite;
+}
+
+.botonMostrarCarrusel li:hover, li:active {
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.1em;
+}
+
+/*---------- Carrusel imágenes ----------*/
+
+#carruselExt {
+    position: absolute;
+    display: none;
+    left: 0rem;
+    top: 0;
+    z-index: 900;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+#idIframeCarrusel {
+    position: relative;
+    display: block;
+    left: 0rem;
+    top: 0;
+    z-index: 900;
+    width: 100vw;
+    height: 100%;
+    margin: auto;
+}
+
+#btCerrar {
+    z-index: 1000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    cursor: pointer;
+}
+
+#btCerrar:hover {
+    opacity: .5;
+    background-color: palevioletred;
+}

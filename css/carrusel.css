@@ -1,0 +1,62 @@
+﻿* {
+    margin: 0;
+    border: 0;
+    padding:0;
+}
+
+body{
+    background:rgba(190, 187, 187, .75);
+    min-width:100px;
+    position:relative;
+}
+
+#carruselDiv{
+    position:relative;
+    height:520px;
+    width:90%;
+    margin:auto;
+    top:20px;
+    border:solid thin red;
+}
+#imgCarrusel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
+}
+#izqDiv {
+    position: absolute;
+    display: block;
+    left: 0px;
+    bottom: 0px;
+    width: 5%;
+    height: 100%;
+    font-size: 4em;
+    font-weight: 900;
+    color: #9b9b9b;
+    border: thin solid green;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+#dchoDiv {
+    position: absolute;
+    display: block;
+    right: 0px;
+    bottom: 0px;
+    width: 5%;
+    height: 100%;
+    font-size: 4em;
+    font-weight: 900;
+    color: #9b9b9b;
+    border: thin solid green;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+#izqDiv:hover {
+    opacity: .5;
+}
+#dchoDiv:hover{
+    opacity: .5;
+}
+
+#carruselDiv span { position:absolute;top:40%;}
