@@ -1,0 +1,119 @@
+﻿* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(190, 187, 187, .75);
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.35vmax
+}
+
+/*Disposición de las fotos del carrusel*/
+
+#eventoDiv {
+    position: absolute;
+    top: 0;
+    left: 3vw;
+    display: block;
+    height: 100%;
+    width: 84vw;
+    margin: auto;
+}
+
+#reunionEvt {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    z-index: 1000;
+    background-color: rgba(19, 134, 135, 0.95);
+    color: white;
+}
+
+#tituloEvt {
+    text-align: center;
+    font-size: 2.5em;
+    width: 100%;
+}
+
+#fechaPoblacionLocal {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#fechaPoblacionLocal div {
+    text-align: center;
+    font-size: 1.4em;
+    display: inline-block;
+    padding: 1em;
+}
+
+#asistentesMenu {
+    display: grid;
+    grid-template-columns: auto auto ;
+    text-align: center;
+    border: solid red 1px;
+}
+
+#asistentesMenu div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    text-align: left;
+    padding: 0em 0em 0em .6em;
+    font-size: .95em;
+}
+
+.cabecera {
+    grid-column: 1 / 4;
+
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*// La información del evento //*/
+
+.carruselContainer {
+    position: relative;
+    top: 1em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3vw auto 3vw;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    border: red thin solid;
+}
+
+.carruselContainerIMG {
+    margin: 0 auto;
+}
+
+.carruselArrow {
+    text-align: center;
+    padding-top: 40vh;
+    font-size: 200%;
+    color: ivory;
+    cursor: pointer;
+}
+
+.carruselArrow:hover {
+    background-color: rgba(255, 255, 255, 0.09);
+    color: black;
+    font-weight: bolder;
+    font-size: 280%;
+}
+
+.carruselImg {
+    height: 90vh;
+    object-fit: contain;
+    text-align: justify;
+    overflow: hidden;
+}
+#asiatentesEvt{
+    width: auto;
+}

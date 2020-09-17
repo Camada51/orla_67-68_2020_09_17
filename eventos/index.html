@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Reunión</title>
+
+    <link type="text/css" href="css/eventos.css" rel="stylesheet" />
+    <script src="js/evento.js"></script>
+</head>
+
+<body onload="iniPage();" >
+    <!-- <div id="carruselExt" style="display:block; width:fit-content"> -->
+    <div id="carruselDiv" class="carruselContainer">
+        <div id="izqDiv" class="carruselArrow" onclick="anterior();">&lt;</div>
+        <div class="carruselContainerIMG">
+            <img id="imgCarrusel" class="carruselImg" src="../eventos/20180525_Madrid/img/CasaBaranda_Bing.jpg" />
+            <div id="eventoDiv">
+                <div id="reunionEvt">
+                    <div id="tituloEvt"></div>
+                    <div id="fechaPoblacionLocal">
+                        <div id="fechaEvt"></div>
+                        <div id="poblacionEvt"></div>
+                        <div id="localEvt"></div>
+                    </div>
+                    <div id="asistentesMenu">
+                        <div>
+                            <div class="cabecera">Asistentes</div>
+                            <div >
+                                <div id="asistentesEvt"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="cabecera">Menú y otros...</div>
+                            <div id="menuEvt"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dchoDiv" class="carruselArrow" onclick="siguiente();">&gt;</div>
+
+    </div>
+
+    <!-- </div> -->
+</body>
+
+</html>
