@@ -113,6 +113,8 @@ body {
     object-fit: contain;
     text-align: justify;
     overflow: hidden;
+    max-width: 80vw;
+    max-height: 90vh;
 }
 #asiatentesEvt{
     width: auto;
