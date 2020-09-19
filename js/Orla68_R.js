@@ -13,6 +13,7 @@ var carruselImgCarrusel = 700;
 var XOrlaWidth = 107;
 
 
+document.addEventListener('DOMContentLoaded',ini);
 
 function ini() {
     calcularEscala();
